@@ -1,0 +1,389 @@
+/* MAIN CART PAGE */
+.cartpage {
+    background-color: #f4f7fc;
+    padding: 30px 65px;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 30px;
+    min-height: 100vh;
+}
+
+/* LEFT SIDE */
+.shopping-grid {
+    width: 100%;
+}
+
+/* TITLE */
+.shop-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.shop-title h1 {
+    font-size: 38px;
+    margin: 0;
+    color: #0d1b36;
+}
+
+/* ITEM COUNT */
+.itemcount-box {
+    background-color: #eeeaff;
+    color: #514cff;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.itemcount-box p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* FREE SHIPPING BOX */
+.shipping-box {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.shipping-box p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #14213d;
+}
+
+.progress {
+    height: 7px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 100%;
+    background: #514cff;
+    border-radius: 10px;
+}
+
+
+/* CART CONTAINER */
+.cart-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 20px;
+}
+
+
+/* CART ITEM */
+.cart-item {
+    display: grid;
+    grid-template-columns: 35px 105px 1fr 120px 100px 30px;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+
+/* CHECKBOX */
+.cart-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #514cff;
+}
+
+
+/* PRODUCT IMAGE */
+.product-image {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* PRODUCT INFO */
+.product-info {
+    min-width: 0;
+}
+
+.category {
+    color: #514cff;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.product-info h3 {
+    color: #0d1b36;
+    font-size: 17px;
+    margin: 0 0 7px;
+}
+
+.details {
+    color: #687086;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* QUANTITY */
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f4fc;
+    border-radius: 25px;
+    padding: 7px 12px;
+    width: 95px;
+}
+
+.quantity button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: #0d1b36;
+}
+
+.quantity span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* PRICE */
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d1b36;
+}
+
+
+/* DELETE BUTTON */
+.delete-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* CART FOOTER */
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.continue {
+    border: none;
+    background: transparent;
+    color: #514cff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.clear {
+    border: 1px solid #ff6666;
+    background-color: white;
+    color: #ff5555;
+    padding: 12px 25px;
+    border-radius: 9px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* RIGHT SIDEBAR */
+.cart-side-bar {
+    width: 100%;
+}
+
+/* PROMO CODE */
+.promo-code-box {
+    background-color: white;
+    width: auto;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin: 0 0 8px;
+    height: auto;
+}
+
+.promo-code-box p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #14213d;
+}
+
+.promo-code-box input {
+    box-sizing: border-box;
+    border: none;
+    background-color: #f1f5fc;
+    margin: 0;
+    width: calc(100% - 85px);
+    height: 42px;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.promo-code-box button {
+    background-color: black;
+    color: white;
+    width: 65px;
+    height: 42px;
+    border: none;
+    margin-left: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* ORDER SUMMARY */
+.ordersummary-box {
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 0;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+}
+
+.ordersummary-title h3 {
+    margin: 0 0 18px;
+    font-size: 21px;
+    color: #0d1b36;
+}
+
+.ordersummary-container {
+    margin: 0;
+}
+
+
+/* ORDER ROW */
+.order-sub-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.order-sub-title p {
+    margin: 0;
+    color: #697189;
+    font-size: 14px;
+}
+
+.order-sub-title h2 {
+    margin: 0;
+    color: #0d1b36;
+    font-size: 15px;
+}
+
+.margin-remove {
+    margin: 0;
+}
+
+
+/* DIVIDER */
+.ordersummary-container hr {
+    border: none;
+    border-top: 1px solid #e1e5ed;
+    margin: 14px 0;
+}
+
+
+/* TOTAL */
+.total-row h2 {
+    font-size: 25px;
+    color: #0d1b36;
+}
+
+.total-row p {
+    color: #777;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+/* PROCEED BUTTON */
+.ordersummary-container button {
+    margin-bottom: 12px;
+}
+
+.proceed-btn {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.proceed-btn-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* FOOTER */
+.side-bar-footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+}
+
+.side-bar-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background-color: #f2f6fd;
+    border-radius: 9px;
+    padding: 8px 10px;
+    min-height: 60px;
+    box-sizing: border-box;
+}
+
+.side-bar-footer img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.side-bar-footer h4 {
+    margin: 0 0 3px;
+    font-size: 11px;
+    color: #14213d;
+    font-weight: 700;
+}
+
+.side-bar-footer p {
+    margin: 0;
+    font-size: 9px;
+    color: #697189;
+}
