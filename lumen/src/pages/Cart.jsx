@@ -6,7 +6,9 @@ import truck from "../assets/cart-images/truck.png"
 import headset from '../assets/cart-images/headset.png'
 import shield from "../assets/cart-images/shield.png"
 import verify from "../assets/cart-images/verify.png"
-import products from "../data/products"
+import Checkout from "./Checkout"
+import { useNavigate } from "react-router-dom"
+
 function Cart() {
     const [itemcount, setItemCount] = useState(productsData.length)
     const [cart, setCart] = useState(productsData)
@@ -14,6 +16,8 @@ function Cart() {
     const [price, setPrice] = useState(0)
     const [promo, setPromo] = useState(89)
     const [tax, setTax] = useState(35)
+    const navigate = useNavigate();
+
     useEffect(() => {
         const totalPrice = cart.reduce(
             (total, product) => total + product.price * product.quantity,
@@ -133,7 +137,7 @@ function Cart() {
                             </div>
                             <p className="margin-remove">included all taxes and duties</p>
                             <hr />
-                            <button className="proceed-btn">
+                            <button className="proceed-btn" onClick={() => navigate("/checkout", { state: { cart } })}>
                                 <div className="proceed-btn-content">
                                     <p>Proceed to Checkout</p>
                                     <p>${totalprice}</p>
