@@ -1,15 +1,10 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
-import { BrowserRouter } from 'react-router-dom'
-import Cart from './pages/Cart'
-
-import { BrowserRouter } from 'react-router-dom'
-// import Product_details from './pages/Product_details'
-import Wishlist from './pages/Wishlist'
+import Home from './pages/Home'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Product from './pages/Product'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,8 +13,16 @@ function App() {
       <>
       <BrowserRouter>
          <Navbar/>
-         <Wishlist/>
-         
+          <Routes>
+           <Route path="/"element={
+          
+              <Home />}/>
+              <Route path="/product"element={
+          
+              <Product />}/>
+           
+         </Routes>
+         <Footer/>
          </BrowserRouter>
       </>
   )

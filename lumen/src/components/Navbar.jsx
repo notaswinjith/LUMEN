@@ -18,15 +18,15 @@ function Navbar() {
           Home
         </NavLink>
 
-        <NavLink to="/menu" className={'links'}>
+        <NavLink to="/Product" className={'links'}>
          Product
         </NavLink>
 
-        <NavLink to="/about" className={'links'}>
+        <NavLink to="/Collection" className={'links'}>
           Collection
         </NavLink>
 
-        <NavLink to="/contact" className={'links'}>
+        <NavLink to="/About" className={'links'}>
           About
         </NavLink>
 
