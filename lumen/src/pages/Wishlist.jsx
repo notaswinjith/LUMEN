@@ -245,5 +245,9 @@ function Wishlist() {
     </div>
   );
 }
-
 export default Wishlist;
+
+
+
+
+
