@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react"
 import "../style/cart-page.css"
 import CartItem from "../components/CartItem"
-// import productsData from "../data/products"
+ import productsData from "../data/products"
 import truck from "../assets/cart-images/truck.png"
 import headset from '../assets/cart-images/headset.png'
 import shield from "../assets/cart-images/shield.png"
