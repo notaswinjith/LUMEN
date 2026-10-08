@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #e7ecf6;
+  color: #14213d;
+}
+
+.wishlist-page{
+  height: 1000px;
+  background: fixed;
+}
+main{
+  padding: 20px 5%;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #69758d;
+  margin-bottom: 20px;
+}
+
+.breadcrumb span {
+  margin: 0 10px;
+}
+.wishlist-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wishlist-header h1{
+  font-size: 35px;
+  margin: 0;
+}
+.wishlist-header p{
+  font-size: 14px;
+  margin:7px;
+  color: #b7cbf1;
+}
+.header-buttons{
+  display: flex;
+  gap: 8px;
+}
+.header-buttons button{
+  border-radius: 20px;
+  background-color: rgb(184, 184, 239);
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(121, 62, 176);
+}
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.wishlist-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 9px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-image {
+  height: 225px;
+  position: relative;
+  border-radius: 9px;
+  overflow: hidden;
+  background: #eee;
+}
+.product-image img{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 16px;
+}
+.product-content {
+  padding: 8px 9px 7px;
+}
+.product-content h2{
+  margin: 0;
+  font-size: 17px;
+
+}
+.product-rating{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 8px;
+}
+.product-rating span{
+  color: rgb(106, 106, 247);
+}
+.product-price{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+.
