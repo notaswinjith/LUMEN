@@ -5,6 +5,7 @@ import head from '../assets/headphones1.jpg'
 import blaz from '../assets/blazer.jpeg'
 import watc from '../assets/watch.jpg'
 import flas from '../assets/flask.jpg'
+import summ from '../assets/summary.png'
 
 function Wishlist() {
   const [items, setItems] = useState([
@@ -168,7 +169,7 @@ function Wishlist() {
           <div className="wishlist-summary">
 
             <div className="summary-icon">
-              🛍
+              <img src={summ} alt="img" />
             </div>
 
             <div className="summary-price">

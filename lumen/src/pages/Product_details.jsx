@@ -321,7 +321,7 @@ function Product_details() {
           </div>
 
           <div className="accessory">
-            <img src={kit} alt="" />
+            <img src={kit} alt="image" />
             <small>Care</small>
             <p>Cleaning Kit</p>
             <b>$15.00</b>
