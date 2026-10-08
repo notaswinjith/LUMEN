@@ -22,33 +22,6 @@ function Checkout() {
     return (
         <div className="checkout-page">
 
-            {/* HEADER */}
-            <header className="checkout-header">
-                <div className="checkout-logo">LUMEN</div>
-
-                <nav className="checkout-navigation">
-                    <a href="#">Home</a>
-                    <a href="#">Products</a>
-                    <a href="#">Collections</a>
-                    <a href="#">About</a>
-                </nav>
-
-                <div className="checkout-header-actions">
-                    <div className="checkout-search">
-                        🔍
-                        <input
-                            type="text"
-                            placeholder="Search for products..."
-                        />
-                    </div>
-
-                    <span className="header-icon">♡</span>
-                    <span className="header-icon">🛒</span>
-                    <div className="profile-circle">A</div>
-                </div>
-            </header>
-
-
             {/* MAIN CONTENT */}
             <main className="checkout-layout">
 
