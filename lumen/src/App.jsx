@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import { BrowserRouter } from 'react-router-dom'
-
 import Home from './pages/Home'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Product from './pages/Product'
 import Footer from './components/Footer'
+import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
 
 
 function App() {
@@ -23,8 +23,10 @@ function App() {
           
               <Home />}/>
               <Route path="/product"element={
-          
+              
               <Product />}/>
+              <Route path="/cart" element={<Cart/>}/>
+              <Route path="/checkout" element={<Checkout/>}/>
            
          </Routes>
          <Footer/>
