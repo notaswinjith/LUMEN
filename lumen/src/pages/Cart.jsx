@@ -1,14 +1,18 @@
 import { useEffect, useMemo, useState } from "react"
 import "../style/cart-page.css"
 import CartItem from "../components/CartItem"
-import productsData from "../data/products"
+// import productsData from "../data/products"
 import truck from "../assets/cart-images/truck.png"
 import headset from '../assets/cart-images/headset.png'
 import shield from "../assets/cart-images/shield.png"
 import verify from "../assets/cart-images/verify.png"
+<<<<<<< HEAD
 import Checkout from "./Checkout"
 import { useNavigate } from "react-router-dom"
 
+=======
+// import products from "../data/products"
+>>>>>>> f13d9aaccc797265f34bd8117f9d97e0698cbcd9
 function Cart() {
     const [itemcount, setItemCount] = useState(productsData.length)
     const [cart, setCart] = useState(productsData)
